@@ -520,7 +520,6 @@ div.footer h6 {
 /* Desktop Styles */
 @media only screen and (max-width:1600px){
     div.hero-background-pos{
-        background: chartreuse;
         position:relative;
         left:0px;
         margin: 2rem;
