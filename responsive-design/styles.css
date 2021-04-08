@@ -362,22 +362,7 @@ div.footer h6 {
 
 /* Mobile Styles*/
 @media only screen and (max-width:550px){ 
-    /* div.nav-bar {
-        justify-content: center;
-    } */
-
-        /* div.logo {
-            font-size:1.3rem;
-        } */
-
-    /* div.ul{
-        display: none;
-    } */
-
-    /* ul li {
-        margin: 0 1.7vw;
-        font-size:0.9rem;
-    } */
+ 
 
     div.nav-bar{
         padding: 1rem 2rem;
@@ -484,7 +469,7 @@ div.footer h6 {
 
     input[type="text"]{
         width:100%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     input[type="email"]{
@@ -606,9 +591,10 @@ div.footer h6 {
 
 /* Tablet Styles */
 @media only screen and (min-width:551px) and (max-width:1000px){
-    /* div.nav-bar {
+     div.nav-bar {
+        flex-wrap: wrap;
         justify-content: center;
-    } */
+    }
 
     div.hero-section{
         padding: 6rem;
@@ -633,8 +619,28 @@ div.footer h6 {
     }
 }
 
+@media only screen and (max-width:819px){
+    input[type="text"]{
+        width:100%;
+        margin-bottom: 1rem;
+    }
 
-/* Desktop Styles */
+    input[type="email"]{
+        width:100%;
+    }
+
+    textarea{
+        width:100%;
+    }
+
+    div.footer-btn a {
+        padding: 15px 100px;
+        border-radius: 3px;
+        letter-spacing: 1px;
+    }
+}
+
+
 @media only screen and (max-width:1600px){
     div.hero-background-pos{
         position:relative;
@@ -642,3 +648,5 @@ div.footer h6 {
         margin: 2rem;
     }
 }
+
+/* Desktop Styles */
