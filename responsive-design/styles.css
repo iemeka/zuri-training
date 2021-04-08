@@ -439,8 +439,9 @@ div.footer h6 {
     }
 
     div.snapshot-team p{
-        font-size: 0.8rem;
-        letter-spacing: 0px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        padding: 0.8rem 0.8rem 0rem 0.8rem;
     }
 
     div.snapshot-box-content > div {
