@@ -254,7 +254,9 @@ html,body {
         -ms-flex-align: start;
             align-items: flex-start;
     height: 280px;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 .links li{
@@ -404,7 +406,7 @@ html,body {
 /* language links */
 @media only screen and (max-width:435px){
     .links li {
-        font-size: 0.6em;
+        font-size: 0.51em;
     }
 }
 
@@ -448,7 +450,7 @@ html,body {
     }
 
     /* header */
-    .sect-head li:{
+    .sect-head li{
         margin: 0.2rem;
     }
 
