@@ -1,0 +1,348 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,body {
+    margin: 0em;
+    height: 100%;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* head section */
+.container{
+    border: 1px solid magenta;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100%;
+
+}
+
+.container > *{
+    border: 1px solid turquoise;
+}
+
+.sect-head {
+    padding-top: 0.94rem;
+    margin:0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.sect-head li {
+    list-style: none;
+    margin:0.313rem;
+}
+
+.sect-head li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.94rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+.sect-head li a:hover{
+    text-decoration: underline;
+}
+
+.sect-head li:nth-child(3){
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto 1.6rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.sect-head li:nth-child(3):hover{
+    background-color: #ece8e8;
+}
+
+.sect-head li:nth-child(3) img{
+    width: 24px;
+}
+
+.sect-head li:nth-child(4){
+    /* border: 1px solid red; */
+    margin-right: 1.3rem;
+}
+
+.sect-head li:nth-child(4) a{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.sect-head li:nth-child(4) a:hover{
+    background-color: #ece8e8;
+}
+
+
+.sect-head li:nth-child(4) img{
+        justify-content: center;
+        align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+/* end of head section */
+
+/* --- */
+
+/* google image section */
+
+.sect-google{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+}
+
+.sect-google img{
+    /*  */
+}
+
+/* End of google image section */
+
+/* search box section */
+.sect-search{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.search-box{
+    border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    flex: 1;
+    margin: 0 1.3rem;
+    position: relative;
+    
+}
+
+.search-box a{
+    position: absolute;
+}
+
+.search-box a:nth-child(1) {
+    left: 1em;
+    /* top:0.6em; */
+}
+
+.search-box a:nth-child(1) img{
+    width: 25px;
+}
+
+.search-box a:nth-child(3){
+    right: 1em;
+}
+
+.search-box a:nth-child(3) img{
+    width: 15px;
+}
+
+.search-box input{
+    width: 100%;
+    padding: 0.7rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgb(168, 166, 166);
+    text-align: center;
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0px 0px 9px -4px black; /*right ,bottom, blur, spread radius*/
+    border: gray;
+}
+/* end of search box section */
+
+/* two buttons */
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    padding: 0.7em;
+    text-transform: capitalize;
+    font-family:sans-serif;
+    color: rgb(31, 30, 30);
+    border: 0;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 1em;
+}
+
+.buttons button:nth-child(2) {
+    margin-left: 1em;
+}
+
+.buttons button:hover{
+    box-shadow: 2px 2px 5px -3px black;
+}
+
+/* two buttons ends */
+
+/* language links */
+.links{
+    margin: 0;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 280px;
+}
+
+.links li{
+    border: 1px solid rgb(255, 0, 221);
+    list-style: none;
+    margin-top: 2em;
+    margin-right: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.links li a{
+    text-transform: capitalize;
+    color: rgb(30, 30, 148);
+    text-decoration: none;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+}
+
+/* End language links */
+
+/* first footer */
+.foot-one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #dadce0;
+    background-color: #f2f2f2;
+    padding-left: 2em;
+    height: 50px;
+}
+
+.foot-one span{
+    text-transform: capitalize;
+    font-size: 1em;
+    color: rgba(0,0,0,.54);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* end first footer */
+
+/* second footer */
+.foot-two {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:1;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.foot-two ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.foot-two ul li{
+    list-style: none;
+}
+
+.foot-two ul li:hover{
+    text-decoration: underline;
+}
+
+.foot-two ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.foot-two ul:nth-child(1){
+    border:1px solid black;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.foot-two ul:nth-child(1) li{
+    margin-right: 2em;
+}
+
+.foot-two ul:nth-child(2){
+    border:1px solid black;
+    justify-content: center;
+    flex: 2;
+}
+
+.foot-two ul:nth-child(2) img{
+    width: 15px;
+}
+
+.foot-two ul:nth-child(3){
+    border:1px solid black;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.foot-two ul:nth-child(3) li{
+    margin-right: 2em;
+}
+
+/* end  */
+
+/* media query for footer and css autoprefiller */
+
+@media only screen and (max-width:400px){
+    .foot-two,.foot-one {
+        padding-left: .3em;
+    }
+}
