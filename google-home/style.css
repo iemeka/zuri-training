@@ -17,7 +17,6 @@ html,body {
 
 /* head section */
 .container{
-    border: 1px solid magenta;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27,10 +26,6 @@ html,body {
             flex-direction: column;
     min-height: 100%;
 
-}
-
-.container > *{
-    border: 1px solid turquoise;
 }
 
 .sect-head {
@@ -89,7 +84,6 @@ html,body {
 }
 
 .sect-head li:nth-child(4){
-    /* border: 1px solid red; */
     margin-right: 1.3rem;
 }
 
@@ -128,10 +122,6 @@ html,body {
     height: 250px;
 }
 
-.sect-google img{
-    /*  */
-}
-
 /* End of google image section */
 
 /* search box section */
@@ -142,7 +132,6 @@ html,body {
 }
 
 .search-box{
-    border: 1px solid pink;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +148,6 @@ html,body {
 
 .search-box a:nth-child(1) {
     left: 1em;
-    /* top:0.6em; */
 }
 
 .search-box a:nth-child(1) img{
@@ -225,7 +213,6 @@ html,body {
 /* language links */
 .links{
     margin: 0;
-    border: 1px solid orange;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -234,7 +221,6 @@ html,body {
 }
 
 .links li{
-    border: 1px solid rgb(255, 0, 221);
     list-style: none;
     margin-top: 2em;
     margin-right: 0.5em;
@@ -308,7 +294,6 @@ html,body {
 }
 
 .foot-two ul:nth-child(1){
-    border:1px solid black;
     justify-content: flex-start;
     flex: 1;
 }
@@ -318,7 +303,6 @@ html,body {
 }
 
 .foot-two ul:nth-child(2){
-    border:1px solid black;
     justify-content: center;
     flex: 2;
 }
@@ -328,7 +312,6 @@ html,body {
 }
 
 .foot-two ul:nth-child(3){
-    border:1px solid black;
     justify-content: flex-end;
     flex: 1;
 }
@@ -341,8 +324,36 @@ html,body {
 
 /* media query for footer and css autoprefiller */
 
+/* footer containers */
 @media only screen and (max-width:400px){
     .foot-two,.foot-one {
-        padding-left: .3em;
+        padding-left: 0.6em;
     }
 }
+
+/* language links */
+@media only screen and (max-width:435px){
+    .links li {
+        font-size: 0.6em;
+    }
+}
+
+/* footer items */
+@media only screen and (max-width:816px){
+    .foot-two {
+        flex-direction: column;
+    }
+
+    .foot-two ul:nth-child(1){
+        justify-content: center
+    }
+
+    .foot-two ul:nth-child(2){
+        justify-content: center;
+    }
+
+    .foot-two ul:nth-child(3){
+        justify-content: center;
+    }
+}
+
