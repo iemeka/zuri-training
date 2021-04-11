@@ -442,7 +442,7 @@ html,body {
     }
 
     .foot-two ul li{
-        margin: 0.5em;
+        margin: 0.1em;
     }
 
     /* header */
@@ -486,6 +486,14 @@ html,body {
     
     .sect-google img {
         width: 150px;
+    }
+
+    .sect-google{
+        height: 150px;
+    }
+
+    .links{
+        height: 250px;
     }
 
 }
