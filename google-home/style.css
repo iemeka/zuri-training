@@ -444,4 +444,48 @@ html,body {
     .foot-two ul li{
         margin: 0.5em;
     }
+
+    /* header */
+    .sect-head li:{
+        margin: 0.2rem;
+    }
+
+    .sect-head li a {
+        font-size: 0.6rem;
+    }
+
+    .sect-head li:nth-child(3){
+        margin:0px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .sect-head li:nth-child(3) img{
+        width: 13px;
+    }
+
+    .sect-head li:nth-child(4){
+        margin-right: 0.5rem;
+    }
+
+    .sect-head li:nth-child(4) a{
+        width: 35px;
+        height: 35px;
+    }
+
+    .sect-head li:nth-child(4) img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .sect-head li{
+        margin-left: 0.1rem;
+    }
+
+    /* google image */
+    
+    .sect-google img {
+        width: 150px;
+    }
+
 }
