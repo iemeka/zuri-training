@@ -418,7 +418,8 @@ html,body {
     .foot-two ul:nth-child(1){
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center
+                justify-content: center;
+                flex-direction:column;
     }
 
     .foot-two ul:nth-child(2){
@@ -431,5 +432,6 @@ html,body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+                flex-direction:column;
     }
 }
