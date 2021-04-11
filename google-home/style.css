@@ -254,6 +254,7 @@ html,body {
         -ms-flex-align: start;
             align-items: flex-start;
     height: 280px;
+    flex: 1;
 }
 
 .links li{
@@ -313,13 +314,14 @@ html,body {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-flex:1;
+    /* -webkit-box-flex:1;
         -ms-flex:1;
-            flex:1;
+            flex:1; */
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-left: 2em;
+    min-height: 50px; /* to see min height in action use only 'height' and reduce page width.*/
 }
 
 .foot-two ul{
