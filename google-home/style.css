@@ -434,4 +434,8 @@ html,body {
                 justify-content: center;
                 flex-direction:column;
     }
+
+    .foot-two ul li{
+        margin: 0.5em;
+    }
 }
