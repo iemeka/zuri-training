@@ -293,8 +293,17 @@ form > div:nth-child(8) button{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
     background-color: #f89b72ff;
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
     -webkit-box-shadow: 5px 5px 20px -2px #f89b72ff;
             box-shadow: 5px 5px 20px -2px #f89b72ff;
+}
+
+form > div:nth-child(8) button:hover{
+    background-color: #e38a63ff;
+
 }
 
 /* media queries */
