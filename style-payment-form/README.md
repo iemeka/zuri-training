@@ -1,5 +1,5 @@
 # zuri-training
-- Task Title: Create your Resume. 
-    - hosted link : https://iemeka.github.io/zuri-training/resume/
-    - Task Created by: I4g
+- Task Title: Design/Style A Payment Form. 
+    - hosted link : https://iemeka.github.io/zuri-training/style-payment-form/
+    - Task Created by: Seunbayo
 
