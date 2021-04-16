@@ -12,3 +12,7 @@ All assignment during  the training will be hosted here
 - Task Title: Design/Style A Payment Form. 
     - hosted link : https://iemeka.github.io/zuri-training/style-payment-form/
     - Task Created by: Seunbayo
+
+- Task Title: Create your Resume. 
+    - hosted link : https://iemeka.github.io/zuri-training/resume/
+    - Task Created by: I4g

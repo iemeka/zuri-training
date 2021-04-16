@@ -1,0 +1,300 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+}
+
+a {
+  color: #27ae60;
+}
+
+b {
+  color: #f0932b;
+  font-weight: normal;
+}
+
+.container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 1rem 0 0 1rem;
+  position: relative;
+  -webkit-box-shadow: -15px 15px 18px -18px black;
+          box-shadow: -15px 15px 18px -18px black;
+  background:
+  -o-linear-gradient(right top, #ffffff 50%, #4b4b4b 0) no-repeat 100% 0 / 4em 4em,
+  -o-linear-gradient(225deg, #b2b3b2 4em, #ffffff 0 );
+  background:
+  linear-gradient(to left bottom, #ffffff 50%, #4b4b4b 0) no-repeat 100% 0 / 4em 4em,
+  linear-gradient(-135deg, #b2b3b2 4em, #ffffff 0 );
+}
+
+.red-line {
+  border: 1px solid red;
+  position: absolute;
+  min-height: 90.5%;
+  width: 0.1vw;
+  left: 10rem;
+  top: 5.5rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header h1 {
+  font-size: 1.5vw;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.4em;
+
+}
+
+.header ul li {
+  list-style: none;
+  padding-right: 1rem;
+}
+
+.header ul li span{
+    font-weight: bold;
+}
+
+.header > ul > li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.space {
+  height: 1.5rem;
+  border: none;
+}
+
+.line {
+  border-bottom: 1px solid #686de0;
+}
+
+.experience .group-two > div:nth-child(1),
+.experience .group-one > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: capitalize;
+}
+
+.experience .group-two > div:nth-child(1) span,
+.experience .group-one > div:nth-child(1) span {
+  margin-right: 2rem;
+}
+
+.experience .group-two > div:nth-child(2) span,
+.experience .group-one > div:nth-child(3) span,
+.experience .group-one > div:nth-child(2) span {
+  margin-left: 10rem;
+}
+
+#bullet-group-two > div:nth-child(1) span,
+#bullet-group-one > div:nth-child(1) span {
+  margin-left: 10rem;
+}
+
+#bullet-group-two > div + div span,
+#bullet-group-one > div + div span {
+  margin-left: 10.7rem;
+}
+
+.group-three h2 {
+  margin-left: 10rem;
+}
+
+#bullet-group-five > div:nth-child(1) h3,
+#bullet-group-four > div:nth-child(1) h3,
+#bullet-group-three > div:nth-child(1) h3 {
+  margin-left: 10rem;
+  margin-right: 1rem;
+}
+
+#bullet-group-five > div:nth-child(3) span,
+#bullet-group-four > div:nth-child(4) span,
+#bullet-group-three > div:nth-child(4) span {
+  margin-left: 10.8rem;
+}
+
+#bullet-group-five span,
+#bullet-group-four span,
+#bullet-group-three span {
+  margin-left: 10rem;
+}
+
+#bullet-group-five > div:nth-child(1),
+#bullet-group-four > div:nth-child(1),
+#bullet-group-three > div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education > div:nth-child(3) > span,
+.education > div:nth-child(1) h2 {
+  margin-left: 10rem;
+}
+
+.education > div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education > div:nth-child(2) > span {
+  margin-right: 4.5rem;
+}
+
+.thesis div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thesis div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.thesis div:nth-child(1) h3 {
+  margin-left: 10rem;
+  margin-right: 1rem;
+}
+
+.thesis div + div span {
+  margin-left: 10rem;
+}
+
+.award div > * {
+  margin-left: 10rem;
+}
+
+.hobbies div > * {
+  margin-left: 10rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 2000px) {
+  /* adjusting font takes care of width */
+  * {
+    font-size: 12.71px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+    * {
+      font-size: 10px;
+      line-height: 1.7vh;
+    }
+  
+    .header h1 {
+      font-size: 14px;
+    }
+  
+    .container {
+      margin-top: 3em;
+    }
+  }
+
+@media only screen and (max-width: 680px) {
+    * {
+      font-size: 7.5px;
+      line-height: 1.8vh;
+    }
+  
+    .header h1 {
+      font-size: 13px;
+    }
+  
+    .container {
+      margin-top: 2em;
+    }
+
+    .red-line{
+        top:6em;
+        height: 93%;
+    }
+  }
+
+@media only screen and (max-width: 490px) {
+    * {
+      font-size: 5.3px;
+      line-height: 1.8vh;
+    }
+  
+    .header h1 {
+      font-size: 13px;
+    }
+  
+    .container {
+      margin-top: 3em;
+    }
+
+    .red-line{
+        top:7.92em;
+        height: 93%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    * {
+      font-size: 4.5px;
+      line-height: 1.8vh;
+    }
+  
+    .header h1 {
+      font-size: 12px;
+    }
+  
+    .container {
+      margin-top: 6em;
+    }
+}
