@@ -43,8 +43,8 @@ b {
   margin-bottom: 2em;
   padding: 1rem 0 0 1rem;
   position: relative;
-  -webkit-box-shadow: -20px 20px 25px -25px black;
-          box-shadow: -20px 20px 25px -25px black;
+  -webkit-box-shadow: -25px 25px 30px -30px black;
+          box-shadow: -25px 25px 30px -30px black;
   background:
   -o-linear-gradient(right top, #ffffff 50%, #4b4b4b 0) no-repeat 100% 0 / 4em 4em,
   -o-linear-gradient(225deg, #b2b3b2 4em, #ffffff 0 );
