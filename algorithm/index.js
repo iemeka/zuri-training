@@ -1,4 +1,4 @@
-// Helper Functions.
+// HELPER FUNCTIONS.
 function errorMessage(inputValue, inputValueType) {
   const inputValueString = JSON.stringify(inputValue);
   if (inputValueType !== null) {
@@ -37,7 +37,7 @@ function convertFahrToCelsius(fahr) {
   return errorMessage(fahr, fahrType);
 }
 
-console.log(convertFahrToCelsius("666"));
+console.log(convertFahrToCelsius("23dd"));
 
 // 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array.
 
@@ -75,4 +75,4 @@ function checkYuGiOh(inputParam) {
   return errorMessage(inputParam, null);
 }
 
-console.log(checkYuGiOh({3:4,5:2}));
+console.log(checkYuGiOh("23dd"));
