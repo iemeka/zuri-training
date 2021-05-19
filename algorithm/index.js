@@ -51,7 +51,7 @@ function convertFahrToCelsius(fahr) {
 }
 
 //HOW TO RUN:
-const TOCELSIUSparam = {test:[1,2,3],try:"nothing"};
+const TOCELSIUSparam = 343;
 console.log(convertFahrToCelsius(TOCELSIUSparam));
 
 // 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array.
