@@ -1,22 +1,31 @@
-// HELPER FUNCTIONS.
+// HELPER FUNCTIONS - BOTH QUESTIONS SHARE THE SAME TYPE VALIDATION CHECKS.
+
+// HELPER FUNCTIONS:
+
+// DISPLAYS ERROR MESSAGES FOR BOTH ALGORITHMS.
 function errorMessage(inputValue, inputValueType) {
   const inputValueString = JSON.stringify(inputValue);
   if (inputValueType !== null) {
-    return `${inputValueString} is not a valid number but a/an ${inputValueType}`;
+    return `${inputValueString} is not a valid number but a/an ${inputValueType}`; //CONVERSION
   }
-  return `invalid parameter : ${inputValueString}`;
+  return `invalid parameter : ${inputValueString}`; // YUGIHO
 }
 
+
+// VALIDATE TYPE. 
+// RETURNS TRUE IF A TYPE IS A "NUMBER" OR TYPE IS A STRING(BUT NOT AN EMPTY STRING(" ") AND NOT A STRING THAT CONTAINS LETTERS OR OTHER CHARACTERS("ABC123.?")
 function validateType(fahrType, fahrValue) {
   if (
     fahrType === "number" ||
-    (fahrType === "string" && fahrValue.trim().length > 0 && !isNaN(+fahrValue))
+    (fahrType === "string" && fahrValue.trim().length > 0 && !isNaN(Number(fahrValue)))
   ) {
     return true;
   }
   return false;
 }
 
+// RETURNS REAL VALUE TYPE  
+// FOR OBJECT - [OBJECT OBJECT], FOR TYPE ARRAY - [OBJECT ARRAY], FOR TYPE STRING - [OBJECT STRING]..ETC.WE JUST NEED TO EXTRACT THE SUBSTRING "ARRAY", "STRING", "OBJECT"..ETC.
 function getType(fahrValue) {
   const internalType = Object.prototype.toString.call(fahrValue);
   const extractedType = internalType
@@ -24,6 +33,8 @@ function getType(fahrValue) {
     .toLowerCase();
   return extractedType;
 }
+
+// MAIN FUNCTIONS. - THIS FUNCTIONS BELOW SHARE THE ABOVE FUNCTIONS.
 
 // 1. Write a function named "convertFahrToCelsius" that takes a single parameter and converts it to celsius.
 
@@ -37,6 +48,7 @@ function convertFahrToCelsius(fahr) {
   return errorMessage(fahr, fahrType);
 }
 
+//HOW TO RUN:
 console.log(convertFahrToCelsius("23dd"));
 
 // 2. Write a function named "checkYuGiOh" that takes a number, n, as an argument, creates an array of numbers from 1 to n and replaces multiples of 2, 3, and 5 with "yu", "gi" and "oh", then returns the resulting array.
@@ -75,4 +87,8 @@ function checkYuGiOh(inputParam) {
   return errorMessage(inputParam, null);
 }
 
-console.log(checkYuGiOh("23dd"));
+//HOW TO RUN:
+console.log(checkYuGiOh("30"));
+
+
+
