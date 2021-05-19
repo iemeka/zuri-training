@@ -24,8 +24,9 @@ function validateType(fahrType, fahrValue) {
   return false;
 }
 
-// RETURNS REAL VALUE TYPE  
-// FOR OBJECT - [OBJECT OBJECT], FOR TYPE ARRAY - [OBJECT ARRAY], FOR TYPE STRING - [OBJECT STRING]..ETC.WE JUST NEED TO EXTRACT THE SUBSTRING "ARRAY", "STRING", "OBJECT"..ETC.
+// RETURNS REAL TYPE OF PARAMETER  
+// FOR TYPE ARRAY - [OBJECT ARRAY], FOR TYPE STRING - [OBJECT STRING], FOR OBJECT - [OBJECT OBJECT], 
+// ..ETC.WE JUST NEED TO EXTRACT THE SUBSTRING "ARRAY", "STRING", "OBJECT"..ETC.
 function getType(fahrValue) {
   const internalType = Object.prototype.toString.call(fahrValue);
   const extractedType = internalType
